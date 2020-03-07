@@ -9,9 +9,9 @@ Dự án này nhằm mục đích xây dưng 1 framework bằng C++ để giải
 
 Framework triển khai như sau:
 
-- [] Xây dựng base framework
-- [] Xây dựng bộ bài toán và lời giải bằng code cũng như LAB để thực hành theo dõi kết quả.
-- [] Xây dựng UI cho người dùng.
+- &#x2612; Xây dựng base framework
+- &#x2612; Xây dựng bộ bài toán và lời giải bằng code cũng như LAB để thực hành theo dõi kết quả.
+- &#x2612; Xây dựng UI cho người dùng.
 
 ## Thông tin bản quyền
 
