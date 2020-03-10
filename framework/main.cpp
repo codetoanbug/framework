@@ -1,5 +1,5 @@
-#include "codebugs.h"
 #include "classic.h"
+#include "SQLManager.h"
 
 int main() {
 
@@ -12,6 +12,7 @@ int main() {
       a.showAnswer(i);
       std::cout << "------------------------------" << std::endl;
    }
+   codebugs::SQLManager::initDb("codetoanbug.db");
    return 0;
 }
 

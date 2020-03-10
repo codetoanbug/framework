@@ -7,6 +7,7 @@ namespace codebugs {
       virtual void showLesson(int) = 0;
       virtual void showQuestion(int) = 0;
       virtual void showAnswer(int) = 0;
+      virtual void initDb(const char*) = 0;
    };
 }
 #endif // !CODEBUGS_CODEBUGS_H

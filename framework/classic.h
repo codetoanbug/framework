@@ -37,6 +37,7 @@ namespace codebugs {
       void showAnswer(int index) {
          std::cout << Answers[index] << std::endl;
       }
+      void initDb(const char*) {};
    };
 }
 #endif // !CODEBUGS_CLASSIC_H
