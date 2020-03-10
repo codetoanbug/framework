@@ -1,27 +1,24 @@
-INC += framework/include
+INC += framework
 SRC += framework/main.cpp
 
 OBJDIR = Build
-TARGET = $(OBJDIR)/main
+TARGET = $(OBJDIR)/test
 
 OBJECTS += $(addprefix $(OBJDIR)/,$(addsuffix .o, $(SRC)))
 CPPFLAGS += $(addprefix -I,$(INC))
 
-$(TARGET).exe: $(OBJECTS)
-	@$(MKDIR) -p $(dir $@)
-	$(CP) $(OBJECTS) --output $(basename $@).exe
-
-$(OBJDIR)/%.cpp.o: %.cpp
-	@$(MKDIR) -p $(dir $@)
-	$(CP) -c $(CPPFLAGS) $< -o $@
-
 .PHONY: clean
 
-all: $(TARGET).exe
+all: so dll dylib
+so:		$(TARGET).so
+dll: 	$(TARGET).dll
+dylib:	$(TARGET).dylib
 
 clean:
 	rm -rf $(OBJDIR)
 
+include rules.mk
+
 CC = gcc
-CP = g++
+CPP = g++
 MKDIR = mkdir
