@@ -19,4 +19,4 @@ Dự án phát triển theo MIT License
 
 ## Người đóng góp
 
-- lexuanquynh
+CodetoanbugTeam
